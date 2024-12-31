@@ -1,0 +1,35 @@
+{
+    "env": {
+      "browser": true,
+      "es2021": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:prettier/recommended"
+    ],
+    "overrides": [],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+    },
+    "plugins": [
+      "react",
+      "@typescript-eslint",
+      "react-hooks"
+    ],
+    "rules": {
+      "react-hooks/rules-of-hooks": "error", // Para apontar problemas no Hooks como erro.
+      "react-hooks/exhaustive-deps": "warn", // Para apontar algum problema nas dependências, ele irá apontar como um alerta.
+      "react/prop-types": "off", // Para desabilitar a função de utilizar o Prop-types, pois é melhor utilizar o typescript com o react.
+      "react/react-in-jsx-scope": "off", // Para desabilitar a função de obrigar a importação do react em todos os arquivos, aonde as vezes ele não é utilizado.
+      "@typescript-eslint/explicit-module-boundary-types": "off" // Para não precisar explicitar o tipo de retorno nas funções.
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    }
+  }
