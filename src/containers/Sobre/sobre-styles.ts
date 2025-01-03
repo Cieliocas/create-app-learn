@@ -6,12 +6,10 @@ export const GithubSecao = styled.div`
   text-align: center;
   img {
     height: 157px;
-  }
 
-  @media (max-width: 768px) {
-    img {
-      max-width: 100%;
-      display: block;
+    @media (max-width: 768px) {
+      height: auto;
+      width: 100%;
     }
   }
 `

@@ -9,10 +9,10 @@ export const Descricao = styled(P)`
 export const BotaoTema = styled.button`
   border-radius: 12px;
   padding: 8px;
-  color: #fff;
+  color: ${(props) => props.theme.corTituloSecundaria2};
   font-size: 10px;
   font-weight: bold;
-  background-color: #282a35;
+  background-color: ${(props) => props.theme.corBotaoTema};
   cursor: pointer;
 `
 
@@ -21,4 +21,8 @@ export const SidebarContainer = styled.div`
   top: 80px;
   left: 0;
   text-align: center;
+
+  @media (max-width: 768px) {
+    margin-bottom: 40px;
+  }
 `
